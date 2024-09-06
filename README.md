@@ -57,11 +57,17 @@ Create a custom subnet on your local machine.
 * Deposit: deposit(uint amount)
 * Withdraw: withdraw(uint shares)
 #### Duels Contract
-  - Enroll: enroll(uint256 _power, string calldata _name) 
-  - Placewager : placeWager(uint256 _amount, address _opponent)
-  - EngageInBattle: engageInBattle(address _opponent)
-  - GetFighter: getFighter(address _fighter)
-  - SetName:setName(string calldata _name) 
+  1. Enroll: enroll(uint256 _power, string calldata _name)
+     - Allows a user to enroll as a fighter in the contract.
+  2. Placewager : placeWager(uint256 _amount, address _opponent)
+     - Allows a user to place a wager on a fight against another fighter.
+  3. EngageInBattle: engageInBattle(address _opponent)
+     -  Allows a user to engage in a battle with another fighter.
+  4. GetFighter: getFighter(address _fighter)
+     - Allows anyone to retrieve the details of a specific fighter.
+  5. SetName:setName(string calldata _name)
+     - Allows an enrolled fighter to update their name.
+
 
 ### Working👍👍
 1. __Deploy ERC20 Contract:__ Compile and deploy the ERC20 contract first. Copy the contract address.
